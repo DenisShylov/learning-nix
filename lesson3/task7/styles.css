@@ -1,0 +1,8 @@
+p {
+  line-height: 15px;
+  text-align: justify;
+}
+
+p:first-child {
+  margin: 10px;
+}
