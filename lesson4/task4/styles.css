@@ -1,0 +1,21 @@
+.wrapper {
+  background-color: red;
+}
+
+.first-red {
+  background-color: red;
+  float: left;
+  height: 100px;
+  width: 33%;
+}
+
+.transparent {
+  float: left;
+}
+
+.second-red {
+  background-color: red;
+  float: right;
+  height: 100px;
+  width: 33%;
+}

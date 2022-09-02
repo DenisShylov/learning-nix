@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+  font-weight: 600;
+  width: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.visible:hover .hide {
+  display: block;
+  background-color: red;
+  width: 30px;
+  text-align: right;
+}

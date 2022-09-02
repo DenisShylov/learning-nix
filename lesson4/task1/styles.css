@@ -1,0 +1,28 @@
+div {
+  width: 200px;
+  border: 2px solid;
+}
+
+.first {
+  float: right;
+}
+
+.second {
+  float: left;
+}
+
+.third {
+  float: right;
+}
+
+.fourth {
+  float: left;
+}
+
+.fifth {
+  float: right;
+}
+
+.sixth {
+  float: left;
+}

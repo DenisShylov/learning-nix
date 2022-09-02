@@ -1,0 +1,23 @@
+.green {
+  width: 100px;
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+.first-green {
+  float: right;
+}
+
+.first-red {
+  margin-right: 100px;
+}
+
+.second-red {
+  margin-left: 100px;
+}
+
+.second-green {
+  float: left;
+}
