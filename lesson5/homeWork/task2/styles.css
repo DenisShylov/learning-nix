@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  border: 2px solid;
+}
+
+@media (max-width: 480px) {
+  div {
+    width: 200px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+  div:nth-child(2) {
+    float: left;
+    width: 150px;
+  }
+
+  div:nth-child(3) {
+    float: right;
+  }
+}
+
+@media (min-width: 781px) {
+  div:nth-child(2) {
+    float: left;
+    width: 150px;
+  }
+
+  div:nth-child(3) {
+    float: right;
+    width: 150px;
+  }
+  div:nth-child(4) {
+    width: 60%;
+    margin: auto;
+  }
+}

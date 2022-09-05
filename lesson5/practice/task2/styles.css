@@ -1,0 +1,22 @@
+div {
+  border: 2px solid;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  height: 200px;
+}
+
+.flex-item {
+  margin: 10px;
+  align-self: flex-end;
+}
+
+.center {
+  align-self: center;
+}
+
+.top {
+  align-self: flex-start;
+}

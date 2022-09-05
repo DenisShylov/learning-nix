@@ -1,0 +1,44 @@
+[class|='flex'] {
+  margin: 50px;
+}
+
+.flex-container {
+  display: flex;
+  width: 400px;
+}
+
+.items {
+  width: 100px;
+}
+
+.items:nth-child(2),
+.items:nth-child(4) {
+  flex-shrink: 5;
+}
+
+/* width 500px */
+
+.flex-container2 {
+  width: 500px;
+  display: flex;
+}
+
+.items-2 {
+  width: 100%;
+}
+
+/* width 600px */
+
+.flex-container3 {
+  display: flex;
+  width: 600px;
+}
+
+.items-3 {
+  width: 100px;
+}
+
+.items-3:nth-child(3),
+.items-3:nth-child(4) {
+  flex-grow: 1;
+}

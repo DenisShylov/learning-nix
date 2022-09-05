@@ -1,0 +1,30 @@
+div {
+  border: 2px solid;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.flex-item {
+  margin: 10px;
+  align-self: flex-end;
+}
+
+.top {
+  align-self: flex-start;
+}
+
+.center {
+  align-self: center;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.end {
+  align-self: flex-end;
+}
