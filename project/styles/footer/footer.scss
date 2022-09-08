@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 200px;
+  min-height: 30%;
+
+  &__content {
+    display: flex;
+  }
+
+  &-title {
+    display: block;
+    height: 50px;
+    background-color: green;
+  }
+
+  &__info {
+    margin: 0 30px 20px 30px;
+
+    & ul {
+      display: contents;
+      list-style-type: none;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+  }
+}
