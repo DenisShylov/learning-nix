@@ -14,6 +14,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -27,16 +32,23 @@
     <section class="page">
       <header class="header">
         <button class="header__menu">
-          <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+          <!-- <span><i class="fa-sharp fa-solid fa-bars"></i></span> -->
+          <span class="material-icons">menu</span>
         </button>
 
         <div class="header__logo">
           <img src="./styles/header/smile.png" alt="smile" />
-          <span class="header__logo-text">ROZETKA</span>
+          <span class="header__logo-text"
+            ><a href="./index.html">ROZETKA</a></span
+          >
         </div>
 
-        <button class="catalog-btn">
-          <i class="fa-solid fa-list"></i>Каталог
+        <button
+          class="catalog-btn"
+          onclick="window.location.href = './catalog.html';"
+        >
+          <!-- <i class="fa-solid fa-list"></i>Каталог -->
+          <span class="material-icons"> list </span>Каталог
         </button>
 
         <div class="header_search">
@@ -51,7 +63,8 @@
             class="header__item-basket"
             onclick="window.location.href = './basket.html';"
           >
-            <img src="./styles/header/1.svg" alt="basket" />
+            <!-- <img src="./styles/header/1.svg" alt="basket" /> -->
+            <span class="material-icons"> shopping_cart </span>
           </button>
         </div>
       </header>
@@ -279,7 +292,7 @@
             <ul>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Условия использования сайта</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="./contacts.html">Контакты</a></li>
             </ul>
           </div>
 

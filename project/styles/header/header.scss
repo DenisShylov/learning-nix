@@ -59,6 +59,10 @@ img {
   margin-left: 50px;
   color: white;
   line-height: 30px;
+
+  &:hover .hidden {
+    display: block;
+  }
 }
 
 .header__item-lang {

@@ -1,0 +1,27 @@
+.btn-facebook {
+  color: rgb(9, 33, 169);
+  font-size: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.btn-twitter {
+  color: lightskyblue;
+  font-size: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.btn-github {
+  color: black;
+  font-size: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.card {
+  margin: 30px;
+}
