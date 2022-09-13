@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет-магазин</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="page">
+      <header class="header">
+        <button class="header__menu">
+          <i class="material-icons">menu</i>
+        </button>
+
+        <div class="header__logo">
+          <img src="./styles/header/smile.png" alt="smile" />
+          <span class="header__logo-text"
+            ><a href="./index.html">ROZETKA</a></span
+          >
+        </div>
+
+        <button
+          class="catalog-btn"
+          onclick="window.location.href = './catalog.html';"
+        >
+          <i class="material-icons"> list</i> Каталог
+        </button>
+
+        <div class="header_search">
+          <input class="search-input" type="text" placeholder="Я ищу..." />
+          <button class="button-search">Найти</button>
+        </div>
+
+        <div class="header__item">
+          <button class="header__item-lang">RU</button>
+
+          <button
+            class="header__item-basket"
+            onclick="window.location.href = './basket.html';"
+          >
+            <span class="material-icons"> shopping_cart </span>
+          </button>
+        </div>
+      </header>
+
+      <!-- ТОВАРЫ -->
+
+      <h1 class="product-title" style="margin: 50px">Ноутбуки</h1>
+      <div class="wrapper-card">
+        <div class="card">
+          <img
+            src="https://content1.rozetka.com.ua/goods/images/big_tile/274406560.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Lenovo V14 G2 ITL</b></h4>
+            <p>16 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content2.rozetka.com.ua/goods/images/big_tile/278076447.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук ASUS TUF Gaming F15</b></h4>
+            <p>43 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content2.rozetka.com.ua/goods/images/big_tile/163397814.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Acer Aspire 3 A315</b></h4>
+            <p>16 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content.rozetka.com.ua/goods/images/big_tile/276242444.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук ASUS Laptop X415JA</b></h4>
+            <p>18 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content.rozetka.com.ua/goods/images/big/30872664.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Apple MacBook Air 13"</b></h4>
+            <p>42 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content.rozetka.com.ua/goods/images/big/280562759.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Lenovo IdeaPad 3 15ALC6</b></h4>
+            <p>28 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content.rozetka.com.ua/goods/images/big/275056537.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук ASUS Laptop X515EA</b></h4>
+            <p>22 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content1.rozetka.com.ua/goods/images/big/163403141.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Acer Swift 1 </b></h4>
+            <p>19 999₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content1.rozetka.com.ua/goods/images/big/274271780.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук ASUS TUF Dash F15 </b></h4>
+            <p>47 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://content.rozetka.com.ua/goods/images/big/229718179.jpg"
+            alt="notebook"
+            style="width: 50%"
+          />
+          <div class="container">
+            <h4><b>Ноутбук Apple MacBook Pro 16"</b></h4>
+            <p>114 999 ₴</p>
+
+            <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ФУТЕР -->
+      <footer class="footer">
+        <div class="footer-title"></div>
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__info-heading">
+              <h3>Информация о компании</h3>
+            </div>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Условия использования сайта</a></li>
+              <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__info">
+            <div class="footer__info-heading">
+              <h3>Помощь</h3>
+            </div>
+            <ul>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Кредит</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Возврат товара</a></li>
+              <li><a href="#">Сервисные центры</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

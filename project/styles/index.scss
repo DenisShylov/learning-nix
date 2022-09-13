@@ -1,13 +1,23 @@
-@import './header/header', './main/main', './main/carousel', './main/card',
-  './footer/footer', './basket/basket', './catalog/catalog',
-  './contacts/contacts';
+@import './header/header';
+@import './main/main';
+@import './main/carousel';
+@import './main/card';
+@import './footer/footer';
+@import './basket/basket';
+@import './catalog/catalog';
+@import './contacts/contacts';
+// './orderForm/orderForm';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
 
-button {
-  background-color: black;
-  border-radius: 5px;
+.page {
+  width: 100%;
 }
+// button {
+//   background-color: black;
+//   border-radius: 5px;
+// }

@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты</title>
+    <title>Форма заказа</title>
     <link rel="shortcut icon" href="./favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -21,17 +29,13 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page">
-      <!-- ХЕДЕР -->
+    <section class="page">
       <header class="header">
-        <button
-          class="header__item-menu"
-          onclick="window.location.href = './catalog.html';"
-        >
-          <i class="material-icons">menu</i>
+        <button class="header__menu">
+          <span class="material-icons">menu</span>
         </button>
 
-        <div class="header__logo-btn">
+        <div class="header__logo">
           <img src="./styles/header/smile.png" alt="smile" />
           <span class="header__logo-text"
             ><a href="./index.html">ROZETKA</a></span
@@ -39,19 +43,15 @@
         </div>
 
         <button
-          class="header__catalog-btn"
+          class="catalog-btn"
           onclick="window.location.href = './catalog.html';"
         >
           <i class="material-icons"> list</i> Каталог
         </button>
 
-        <div class="header__search">
-          <input
-            class="header__search-input"
-            type="text"
-            placeholder="Я ищу..."
-          />
-          <button class="header__search-button">Найти</button>
+        <div class="header_search">
+          <input class="search-input" type="text" placeholder="Я ищу..." />
+          <button class="button-search">Найти</button>
         </div>
 
         <div class="header__item">
@@ -61,31 +61,65 @@
             class="header__item-basket"
             onclick="window.location.href = './basket.html';"
           >
-            <i class="material-icons"> shopping_cart </i>
+            <span class="material-icons"> shopping_cart </span>
           </button>
         </div>
       </header>
 
-      <!-- КОНТАКТЫ -->
-      <div class="contacts">
-        <h1 class="contacts__title">Контакты</h1>
-        <div class="contacts-box">
-          <div class="contacts-tel">
-            <span>Телефон поддержки:</span>
-            <ul>
-              <li>+380955555555</li>
-              <li>+380631234567</li>
-            </ul>
+      <!-- ФОРМА ЗАКАЗА -->
+
+      <main class="form">
+        <form class="login-form">
+          <h1 class="form-title">Оформление заказа</h1>
+          <div class="form-control">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Введите ваш e-mail..."
+              required
+            />
           </div>
-          <div class="contacts-address">
-            <span>Адрес магазина:</span>
-            <p>
-              г.Киев <br />
-              ул.Крещатик, 20-22
-            </p>
+          <div class="form-control">
+            <label class="form-label" for="userName">ФИО</label>
+            <input
+              class="form-input"
+              type="text"
+              id="userName"
+              name="userName"
+              required
+            />
           </div>
-        </div>
-      </div>
+          <div class="form-control">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" id="tel" name="tel" required />
+          </div>
+          <div class="form-control">
+            <label class="form-label" for="city">Город </label>
+            <input
+              class="form-input"
+              type="text"
+              id="city"
+              name="city"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="form-label" for="postOffice">Отделение почты </label>
+            <input
+              class="form-input"
+              type="text"
+              id="postOffice"
+              name="postOffice"
+              placeholder="номер отделения новой почты"
+              required
+            />
+          </div>
+          <button class="submit-button" type="submit">Оформить заказ</button>
+        </form>
+      </main>
 
       <!-- ФУТЕР -->
       <footer class="footer">
@@ -116,6 +150,6 @@
           </div>
         </div>
       </footer>
-    </div>
+    </section>
   </body>
 </html>

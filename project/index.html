@@ -8,14 +8,6 @@
     <link rel="shortcut icon" href="./favicon.ico" />
 
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
@@ -29,14 +21,17 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section class="page">
+    <div class="page">
+      <!-- ХЕДЕР -->
       <header class="header">
-        <button class="header__menu">
-          <!-- <span><i class="fa-sharp fa-solid fa-bars"></i></span> -->
-          <span class="material-icons">menu</span>
+        <button
+          class="header__item-menu"
+          onclick="window.location.href = './catalog.html';"
+        >
+          <i class="material-icons">menu</i>
         </button>
 
-        <div class="header__logo">
+        <div class="header__logo-btn">
           <img src="./styles/header/smile.png" alt="smile" />
           <span class="header__logo-text"
             ><a href="./index.html">ROZETKA</a></span
@@ -44,16 +39,19 @@
         </div>
 
         <button
-          class="catalog-btn"
+          class="header__catalog-btn"
           onclick="window.location.href = './catalog.html';"
         >
-          <!-- <i class="fa-solid fa-list"></i>Каталог -->
-          <span class="material-icons"> list </span>Каталог
+          <i class="material-icons"> list</i> Каталог
         </button>
 
-        <div class="header_search">
-          <input class="search-input" type="text" placeholder="Я ищу..." />
-          <button class="button-search">Найти</button>
+        <div class="header__search">
+          <input
+            class="header__search-input"
+            type="text"
+            placeholder="Я ищу..."
+          />
+          <button class="header__search-button">Найти</button>
         </div>
 
         <div class="header__item">
@@ -63,12 +61,12 @@
             class="header__item-basket"
             onclick="window.location.href = './basket.html';"
           >
-            <!-- <img src="./styles/header/1.svg" alt="basket" /> -->
-            <span class="material-icons"> shopping_cart </span>
+            <i class="material-icons"> shopping_cart </i>
           </button>
         </div>
       </header>
 
+      <!-- КАРУСЕЛЬ -->
       <main class="main-content">
         <div class="carousel">
           <div class="carousel-inner">
@@ -136,8 +134,8 @@
           </div>
         </div>
 
-        <h3 class="card-header">Товары</h3>
         <!-- КАРТОЧКИ ТОВАРОВ -->
+        <h3 class="card-header">Товары</h3>
         <div class="wrapper-card">
           <div class="card">
             <img
@@ -145,11 +143,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук Lenovo V14 G2 ITL</b></h4>
               <p>16 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -159,11 +159,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук ASUS TUF Gaming F15</b></h4>
               <p>43 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -173,11 +175,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук Acer Aspire 3 A315</b></h4>
               <p>16 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -187,11 +191,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук ASUS Laptop X415JA</b></h4>
               <p>18 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -201,11 +207,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук Apple MacBook Air 13"</b></h4>
               <p>42 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -215,11 +223,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук Lenovo IdeaPad 3 15ALC6</b></h4>
               <p>28 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -229,11 +239,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук ASUS Laptop X515EA</b></h4>
               <p>22 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -243,11 +255,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
-              <h4><b>Ноутбук Acer Swift 1 </b></h4>
+            <div class="card__description">
+              <h4><b>Ноутбук Acer Swift 1 SF114-34 </b></h4>
               <p>19 999₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -257,11 +271,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук ASUS TUF Dash F15 </b></h4>
               <p>47 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
 
@@ -271,11 +287,13 @@
               alt="notebook"
               style="width: 50%"
             />
-            <div class="container">
+            <div class="card__description">
               <h4><b>Ноутбук Apple MacBook Pro 16"</b></h4>
               <p>114 999 ₴</p>
 
-              <button class="container__btn-basket">ДОБАВИТЬ В КОРЗИНУ</button>
+              <button class="card__description-btn-basket">
+                ДОБАВИТЬ В КОРЗИНУ
+              </button>
             </div>
           </div>
         </div>
@@ -310,6 +328,6 @@
           </div>
         </div>
       </footer>
-    </section>
+    </div>
   </body>
 </html>

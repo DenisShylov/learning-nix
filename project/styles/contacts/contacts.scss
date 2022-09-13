@@ -1,0 +1,35 @@
+@media screen and (min-width: 337px) {
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts-box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contacts-tel span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .contacts-address span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media screen and(min-width:825px) {
+  .contacts-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts-tel {
+    margin-right: 15px;
+  }
+
+  .contacts-address {
+    margin-left: 5px;
+  }
+}
