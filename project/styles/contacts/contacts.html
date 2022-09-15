@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Корзина</title>
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Контакты</title>
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
     <div class="page">
@@ -26,21 +25,21 @@
       <header class="header">
         <button
           class="header__item-menu"
-          onclick="window.location.href = './catalog.html';"
+          onclick="window.location.href = '.././catalog/catalog.html';"
         >
           <i class="material-icons">menu</i>
         </button>
 
         <div class="header__logo-btn">
-          <img src="./styles/header/smile.png" alt="smile" />
+          <img src="../header/smile.png" alt="smile" />
           <span class="header__logo-text"
-            ><a href="./index.html">ROZETKA</a></span
+            ><a href="../../index.html">ROZETKA</a></span
           >
         </div>
 
         <button
           class="header__catalog-btn"
-          onclick="window.location.href = './catalog.html';"
+          onclick="window.location.href = '.././catalog/catalog.html';"
         >
           <i class="material-icons"> list</i> Каталог
         </button>
@@ -59,27 +58,35 @@
 
           <button
             class="header__item-basket"
-            onclick="window.location.href = './basket.html';"
+            onclick="window.location.href = '.././basket/basket.html';"
           >
             <i class="material-icons"> shopping_cart </i>
           </button>
         </div>
       </header>
 
-      <div class="text">Корзина</div>
-      <div class="wrapper-basket">
-        <div class="basket">
-          <div class="basket__content">
-            <img
-              src="https://xl-static.rozetka.com.ua/assets/img/design/modal-cart-dummy.svg"
-              alt="basket"
-            />
-            <h3>Корзина пуста</h3>
-            <p>Но это никогда не поздно исправить :)</p>
+      <!-- КОНТАКТЫ -->
+      <div class="contacts">
+        <h1 class="contacts__title">Контакты</h1>
+        <div class="contacts-box">
+          <div class="contacts-tel">
+            <span>Телефон поддержки:</span>
+            <ul>
+              <li>+380955555555</li>
+              <li>+380631234567</li>
+            </ul>
+          </div>
+          <div class="contacts-address">
+            <span>Адрес магазина:</span>
+            <p>
+              г.Киев <br />
+              ул.Крещатик, 20-22
+            </p>
           </div>
         </div>
       </div>
 
+      <!-- ФУТЕР -->
       <footer class="footer">
         <div class="footer-title"></div>
         <div class="footer__content">
@@ -90,7 +97,7 @@
             <ul>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Условия использования сайта</a></li>
-              <li><a href="./contacts.html">Контакты</a></li>
+              <li><a href=".././contacts/contacts.html">Контакты</a></li>
             </ul>
           </div>
 
