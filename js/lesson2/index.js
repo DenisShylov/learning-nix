@@ -281,23 +281,23 @@
 
 // Task 23
 
-let firstQuestion = alert('Сколько дней в не высокосном году ?');
-let optionA = +prompt('A:366; B:365; C:350;');
+// let firstQuestion = alert('Сколько дней в не высокосном году ?');
+// let optionA = +prompt('A:366; B:365; C:350;');
 
-if (optionA === 365) {
-  alert('Верно! 365');
-} else {
-  alert('Вы ошиблись');
-}
+// if (optionA === 365) {
+//   alert('Верно! 365');
+// } else {
+//   alert('Вы ошиблись');
+// }
 
-let secondQuestion = alert('Сколько грамм в одном киллограмме ?');
-let optionB = +prompt('A:999; B:1: C:1000');
+// let secondQuestion = alert('Сколько грамм в одном киллограмме ?');
+// let optionB = +prompt('A:999; B:1: C:1000');
 
-if (optionB === 1000) {
-  alert('Верно! 1000');
-} else {
-  alert('Вы ошиблись');
-}
+// if (optionB === 1000) {
+//   alert('Верно! 1000');
+// } else {
+//   alert('Вы ошиблись');
+// }
 // Task 24
 
 // let num = prompt('Введите трехзначное число');
