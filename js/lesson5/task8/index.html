@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    1. Об'єктом якого класу є document? --- alert(HTMLDocument.name)-document
+    является объектом класса HTMLDocument <br />
+    2. Яке місце він посідає у DOM-ієрархії? ---
+    alert(HTMLDocument.__proto__.name) - Document <br />
+    3. Чи успадковує він від Node чи від Element, чи може від HTMLElement? ---
+    alert(HTMLDocument.__proto__.__proto__.name) - Node
+  </body>
+</html>
