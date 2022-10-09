@@ -1,0 +1,14 @@
+.sweets {
+  cursor: pointer;
+}
+
+.sweets-hide::after {
+  content: '▶';
+}
+
+.sweets-show::after {
+  content: '▼';
+}
+.sweets-item {
+  display: none;
+}
