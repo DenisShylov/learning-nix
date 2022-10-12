@@ -3,71 +3,87 @@ const screenElem = document.querySelector('.calculator-item__screen-number');
 
 let firstNumber = '';
 let secondNumber = '';
-let symbol = '';
-function Calc(initValue) {
-  let result = initValue;
-  const calculator = {
-    add(value) {
-      result += value;
-      return this;
-    },
+let sign = '';
+let finish = false;
 
-    subtract(value) {
-      result -= value;
-      return this;
-    },
+const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
+const action = ['+', '-', '/', 'X', '%', '+/-'];
 
-    mult(value) {
-      result *= value;
-      return this;
-    },
+const clear = () => {
+  firstNumber = '';
+  secondNumber = '';
+  sign = '';
+  finish = false;
+  screenElem.textContent = 0;
+};
 
-    div(value) {
-      result /= value;
-      return this;
-    },
-    result() {
-      return result;
-    },
-  };
-  return calculator;
-}
 const listenerBtn = (e) => {
-  if (!btnElem) return;
-  // button Clear All
+  // Обнуляем переменные (очистка скрина)
   if (e.target.textContent === 'AC') {
-    firstNumber = '';
-    screenElem.textContent = 0;
-  } else if (e.target.textContent === '+/-') {
-    firstNumber = e.target.textContent;
-    screenElem.textContent = -screenElem.textContent;
-  } else if (e.target.textContent === '%') {
-    screenElem.textContent = screenElem.textContent / 100;
-  } else if (e.target.textContent === '/') {
-    screenElem.textContent = e.target.textContent;
-  } else if (e.target.textContent === '*') {
-    screenElem.textContent = e.target.textContent;
-  } else if (e.target.textContent === '-') {
-    screenElem.textContent = e.target.textContent;
-  } else if (e.target.textContent === '+') {
-    screenElem.textContent = e.target.textContent;
-  } else if (e.target.textContent === '=') {
-    screenElem.textContent = Calc(firstNumber).add(secondNumber).result();
+    clear();
   }
-  if (e.target.classList.contains('grey-row')) {
-    symbol = e.target.textContent;
-    // screenElem.textContent = symbol;
-  } else if (e.target.classList.contains('black-row')) {
-    firstNumber += e.target.textContent;
-    if (secondNumber === '' && symbol === '') {
-      firstNumber += e.target.textContent;
+  const key = e.target.textContent;
+
+  // Заполняем переменные
+  if (digit.includes(key)) {
+    if (secondNumber === '' && sign === '') {
+      firstNumber += key;
       screenElem.textContent = firstNumber;
-    } else if (firstNumber !== '' && symbol !== '') {
-      secondNumber += e.target.textContent;
+    } else if (firstNumber !== '' && secondNumber !== '' && finish) {
+      secondNumber = key;
+      finish = false;
+      screenElem.textContent = secondNumber;
+    } else {
+      secondNumber += key;
       screenElem.textContent = secondNumber;
     }
+    return;
+  }
+
+  // Нажат знак
+  if (action.includes(key)) {
+    if (key === '+/-' || key === '%') {
+      sign = key;
+      screenElem.textContent = firstNumber;
+    } else {
+      sign = key;
+      screenElem.textContent = sign;
+    }
+  }
+
+  // Выполняем операции
+
+  if (key === '=') {
+    if (secondNumber === '') secondNumber = firstNumber;
+    switch (sign) {
+      case '+':
+        firstNumber = +firstNumber + +secondNumber;
+        break;
+      case '-':
+        firstNumber = +firstNumber - +secondNumber;
+        break;
+      case 'X':
+        firstNumber = +firstNumber * +secondNumber;
+        break;
+      case '/':
+        if (secondNumber === '0') {
+          screenElem.textContent = 'Ошибка';
+          firstNumber = '';
+          secondNumber = '';
+          sign = '';
+          return;
+        }
+        firstNumber = +firstNumber / +secondNumber;
+        break;
+      case '%':
+        firstNumber = +firstNumber / 100;
+        break;
+      case '+/-':
+        firstNumber = -firstNumber;
+    }
+    finish = true;
+    screenElem.textContent = firstNumber;
   }
 };
 
-// btnElem.addEventListener('click', listenerBtn);
 [...btnElem].map((el) => el.addEventListener('click', listenerBtn));

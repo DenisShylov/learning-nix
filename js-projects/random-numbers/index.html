@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random numbers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="title">Random Number Generator</span>
+      <div class="random">
+        <div class="range min">
+          <label for="min">min:</label>
+          <input type="number" name="min" id="min" />
+        </div>
+
+        <div class="range max">
+          <label for="max">max:</label>
+          <input type="number" name="max" id="max" />
+        </div>
+
+        <button class="generate-btn">Generate</button>
+        <div class="result">
+          <span>Result:</span>
+          <span class="result-screen"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
