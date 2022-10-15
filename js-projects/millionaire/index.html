@@ -5,46 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Millioner</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="questions">
-        <span class="question center"></span>
-        <div class="list-answer">
-          <ol class="answer-options">
-            <li class="options one"></li>
-            <li class="options two"></li>
-            <li class="options three"></li>
-            <li class="options four"></li>
-          </ol>
-        </div>
-      </div>
-      <div class="help">
-        <button class="btn help-btn fifty">50:50</button>
-        <button class="btn help-btn call">Звонок другу</button>
+        <p class="question center"></p>
+
+        <ol class="answer-options">
+          <li class="options one"></li>
+          <li class="options two"></li>
+          <li class="options three"></li>
+          <li class="options four"></li>
+        </ol>
       </div>
       <div class="wrapper">
+        <div class="help">
+          <button class="btn help-btn fifty">50:50</button>
+          <button class="btn help-btn call">Звонок другу</button>
+        </div>
+
         <div class="questions-numbers">
-          <span data-num="15"><span class="number-list">15</span> 1000000</span>
-          <span data-num="14"><span class="number-list">14</span> 500000</span>
-          <span data-num="13"><span class="number-list">13</span> 250000</span>
-          <span data-num="12"><span class="number-list">12</span> 125000</span>
-          <span data-num="11"><span class="number-list">11</span> 64000</span>
-          <span data-num="10"><span class="number-list">10</span> 32000</span>
-          <span data-num="9"><span class="number-list">9</span> 16000</span>
-          <span data-num="8"><span class="number-list">8</span> 8000</span>
-          <span data-num="7"><span class="number-list">7</span> 4000</span>
-          <span data-num="6"><span class="number-list">6</span> 2000</span>
-          <span data-num="5"><span class="number-list">5</span> 1000</span>
-          <span data-num="4"><span class="number-list">4</span> 500</span>
-          <span data-num="3"><span class="number-list">3</span> 300</span>
-          <span data-num="2"><span class="number-list">2</span> 200</span>
-          <span data-num="1"><span class="number-list">1</span> 100</span>
+          <span class="questions-numbers__item" data-num="15"
+            >15 - 1000000</span
+          >
+          <span class="questions-numbers__item" data-num="14">14 - 500000</span>
+          <span class="questions-numbers__item" data-num="13">13 - 250000</span>
+          <span class="questions-numbers__item" data-num="12">12 - 125000</span>
+          <span class="questions-numbers__item" data-num="11">11 - 64000</span>
+          <span class="questions-numbers__item" data-num="10">10 - 32000</span>
+          <span class="questions-numbers__item" data-num="9">9 - 16000</span>
+          <span class="questions-numbers__item" data-num="8">8 - 8000</span>
+          <span class="questions-numbers__item" data-num="7">7 - 4000</span>
+          <span class="questions-numbers__item" data-num="6">6 - 2000</span>
+          <span class="questions-numbers__item" data-num="5">5 - 1000</span>
+          <span class="questions-numbers__item" data-num="4">4 - 500</span>
+          <span class="questions-numbers__item" data-num="3">3 - 300</span>
+          <span class="questions-numbers__item" data-num="2">2 - 200</span>
+          <span class="questions-numbers__item" data-num="1">1 - 100</span>
         </div>
       </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
