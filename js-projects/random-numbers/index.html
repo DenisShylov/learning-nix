@@ -19,19 +19,29 @@
       <span class="title">Random Number Generator</span>
       <div class="random">
         <div class="range min">
-          <label for="min">min:</label>
-          <input type="number" name="min" id="min" />
+          <label for="min">Min:</label>
+          <input type="number" name="min" id="min" value="0" />
         </div>
 
         <div class="range max">
-          <label for="max">max:</label>
-          <input type="number" name="max" id="max" />
+          <label for="max">Max:</label>
+          <input type="number" name="max" id="max" value="1" />
+        </div>
+
+        <div class="range max">
+          <label for="max">Range:</label>
+          <input type="number" name="max" id="range" />
         </div>
 
         <button class="generate-btn">Generate</button>
         <div class="result">
           <span>Result:</span>
           <span class="result-screen"></span>
+        </div>
+
+        <div class="range">
+          <div>Range:</div>
+          <textarea class="range-screen"></textarea>
         </div>
       </div>
     </div>
